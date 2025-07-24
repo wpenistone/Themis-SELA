@@ -202,7 +202,7 @@ class MainWindow(QMainWindow):
         
         form_layout.addWidget(QLabel("Event:"))
         self.event_input = QComboBox()
-        self.event_input.addItems(["Combat Training", "Crate Run", "Rally", "Raid", "Patrol", "Fort Event", "Miscellaneous Event", "Mandatory Event", "PR"])
+        self.event_input.addItems(["Combat Training", "Crate Run", "Rally", "Raid", "Patrol", "Fort Event", "Miscellaneous Event", "Mandatory Event", "Practise Raid"])
         self.event_input.view().setAlternatingRowColors(True) 
         form_layout.addWidget(self.event_input)
         
