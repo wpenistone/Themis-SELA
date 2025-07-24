@@ -1,0 +1,54 @@
+<img width="1024" height="716.5" alt="Themis" src="https://github.com/user-attachments/assets/0cc5172d-b16b-453e-b9c3-70c062d30870" />
+
+# Themis; SELA - Event Log Aid
+
+Themis; SELA is a desktop application designed to streamline the process of logging event attendance. It uses Optical Character Recognition (OCR) to extract usernames from a screenshot of a voice channel, and then formats them into a standardized log entry.
+
+## Features
+- **Purpose-built for 2C** 
+- **OCR-Powered Username Extraction:** Automatically extracts usernames from screenshots.
+- **Drag-and-Drop & Paste Support:** Easily import screenshots by dragging the file or pasting from the clipboard.
+- **Username Correction:** Suggests corrections for misspelled usernames based on a master list.
+- **Customizable Log Format:** Generates a clean, formatted log entry ready to be copied.
+- **Simple User Interface:** Intuitive and easy-to-use interface built with PyQt6.
+
+## How to Use
+
+1.  **Run the Application:** Launch the `Themis SELA.exe` executable.
+2.  **Provide a Screenshot:**
+    -   Drag and drop a screenshot of the voice channel participants onto the designated area.
+    -   Alternatively, copy a screenshot to your clipboard and paste it using `Ctrl+V` or the right-click context menu.
+3.  **Verify Attendees:** The extracted usernames will appear in the "Attendees" text box. Review the list and manually correct any errors.
+4.  **Fill in Event Details:**
+    -   Select the event type, squad, and day of the week.
+    -   Enter the host's username.
+    -   Optionally, add a description for the event.
+5.  **Generate the Log:** Click the "Generate Log" button.
+    -   If the application finds potential misspellings in the attendee list, it will prompt you with suggestions. You can accept or reject these corrections.
+6.  **Copy the Log:** Click the "Copy to Clipboard" button to copy the formatted log entry.
+
+## `usernames.txt`
+
+The application uses a `usernames.txt` file to power its username suggestion feature.
+
+-   **External List:** To use your own list of usernames, create a file named `usernames.txt` and place it in the same directory as the executable. The application will prioritize this file.
+-   **Default List:** If no external `usernames.txt` is found, the application will fall back to a default, built-in list.
+-   **Format:** The `usernames.txt` file should be a simple text file with one username per line.
+
+## Building from Source
+
+To build the executable from the source code, you will need Python and the following libraries:
+
+-   `PyQt6`
+-   `easyocr`
+-   `Pillow`
+-   `numpy`
+-   `PyInstaller`
+
+Once you have the dependencies installed, you can build the executable by running the following command in the project directory:
+
+```bash
+pyinstaller "Themis_SELA.spec"
+```
+
+
