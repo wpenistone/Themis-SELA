@@ -1,4 +1,4 @@
-<img width="1024" height="716.5" alt="Themis" src="https://github.com/user-attachments/assets/0cc5172d-b16b-453e-b9c3-70c062d30870" />
+<img width="2048" height="1433" alt="Themis" src="https://github.com/user-attachments/assets/0cc5172d-b16b-453e-b9c3-70c062d30870" />
 
 # Themis; SELA - Event Log Aid
 
