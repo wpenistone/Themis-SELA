@@ -37,15 +37,39 @@ The application uses a `usernames.txt` file to power its username suggestion fea
 
 ## Running from Source
 
-To run the application directly from the source code, use the provided PowerShell script. This script automates the setup process, including dependency installation.
+To run the application from source, you first need to set up the environment and install the dependencies.
+
+### First-Time Setup (PowerShell Script)
+The recommended way to get started is to use the `install_dependencies.ps1` script. This will ensure Python and all required libraries are installed correctly.
 
 1.  **Open PowerShell:** Navigate to the project directory in your terminal.
-2.  **Run the Script:** Execute the following command:
+2.  **Run the Setup Script:** Execute the following command:
     ```powershell
     .\install_dependencies.ps1
     ```
-3.  **Follow the Prompts:** The script will first check if Python is installed and install it if it's missing. It will then install all the required libraries.
-4.  **Launch the Application:** Once the setup is complete, you will be presented with a menu. Select option `1` to run the application.
+3.  **Follow the Prompts:** The script will guide you through the installation process.
+
+### Launching the Application
+Once the setup is complete, you can launch the application using the `launch.ps1` script.
+
+-   **Using PowerShell:**
+    ```powershell
+    .\launch.ps1
+    ```
+This will start the application directly, without re-running the dependency checks.
+
+### Manual Method
+If you prefer to manage the dependencies and launch process yourself, follow these steps:
+
+1.  **Install Python:** Ensure you have Python 3 installed and accessible from your command line.
+2.  **Install Dependencies:** Open a terminal and run the following command to install the required libraries:
+    ```bash
+    pip install PyQt6 easyocr Pillow numpy
+    ```
+3.  **Run the Application:** Once the dependencies are installed, run the main script:
+    ```bash
+    python "Themis SELA.py"
+    ```
 
 ## Building from Source
 
