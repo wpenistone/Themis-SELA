@@ -51,4 +51,7 @@ Once you have the dependencies installed, you can build the executable by runnin
 pyinstaller "Themis_SELA.spec"
 ```
 
+## File Size
+The standalone executable is large (around 240MB zipped, 750MB unzipped) because it bundles the `easyocr` library and its language models. This is necessary to ensure the application works out-of-the-box on any system without requiring the user to install Python or download additional dependencies. The models themselves are a significant portion of the size, but they are essential for the OCR functionality to work offline.
+
 
