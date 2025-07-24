@@ -35,9 +35,28 @@ The application uses a `usernames.txt` file to power its username suggestion fea
 -   **Default List:** If no external `usernames.txt` is found, the application will fall back to a default, built-in list.
 -   **Format:** The `usernames.txt` file should be a simple text file with one username per line.
 
+## Running from Source
+
+To run the application directly from the source code, use the provided PowerShell script. This script automates the setup process, including dependency installation.
+
+1.  **Open PowerShell:** Navigate to the project directory in your terminal.
+2.  **Run the Script:** Execute the following command:
+    ```powershell
+    .\install_dependencies.ps1
+    ```
+3.  **Follow the Prompts:** The script will first check if Python is installed and install it if it's missing. It will then install all the required libraries.
+4.  **Launch the Application:** Once the setup is complete, you will be presented with a menu. Select option `1` to run the application.
+
 ## Building from Source
 
-To build the executable from the source code, you will need Python and the following libraries:
+You can build the executable in two ways:
+
+### Using the PowerShell Script (Recommended)
+The `install_dependencies.ps1` script also provides an option to build the executable. After running the script, select option `2` from the menu to start the build process.
+
+### Manual Build
+
+If you prefer to build manually, you will need Python and the following libraries:
 
 -   `PyQt6`
 -   `easyocr`
