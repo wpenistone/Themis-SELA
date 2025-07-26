@@ -29,7 +29,7 @@ Themis; SELA is a desktop application designed to streamline the process of logg
 
 ## `usernames.txt`
 
-The application uses a `usernames.txt` file to power its username suggestion feature.
+`usernames.txt` is used to to power the username correction feature.
 
 -   **External List:** To use your own list of usernames, create a file named `usernames.txt` and place it in the same directory as the executable. The application will prioritize this file.
 -   **Default List:** If no external `usernames.txt` is found, the application will fall back to a default, built-in list.
