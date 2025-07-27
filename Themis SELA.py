@@ -25,7 +25,7 @@ PALETTE = {
     "text_light": "#F0F0F0",
     "text_dark": "#1A243D",
     "widget_bg": "#5B2D3A",        
-    "widget_bg_alt": "#49242F"      
+    "widget_bg_alt": "#4f2834"      
 }
 
 def resource_path(relative_path):
